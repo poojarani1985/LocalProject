@@ -1,6 +1,5 @@
-
-CREATE DATABASE logistics
-use logistics
+CREATE DATABASE logistics1;
+use logistics1;
 CREATE TABLE `orders` (
   `ID` int NOT NULL AUTO_INCREMENT,
   `NAME` varchar(30) DEFAULT NULL,
@@ -94,6 +93,3 @@ CREATE TABLE `fleet_owner_order` (
   CONSTRAINT `fleet_owner_id` FOREIGN KEY (`fleet_owner_id`) REFERENCES `fleet_owner` (`ID`),
   CONSTRAINT `order_id` FOREIGN KEY (`order_id`) REFERENCES `orders` (`ID`)
 ) ENGINE=InnoDB AUTO_INCREMENT=30 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-
-
